@@ -6,5 +6,8 @@ app.use(bodyParser.json());
 app.get('/ping', (req, res) => {
     res.json({'pong': true})
 });
+app.get('/', (req, res) => {
+    res.json({'test': true})
+})
 
 module.exports = {app,}
