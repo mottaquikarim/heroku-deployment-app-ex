@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/mottaquikarim/heroku-deployment-app-ex.svg?branch=master)](https://travis-ci.org/mottaquikarim/heroku-deployment-app-ex) [![Coverage Status](https://coveralls.io/repos/github/mottaquikarim/heroku-deployment-app-ex/badge.svg?branch=add-travis)](https://coveralls.io/github/mottaquikarim/heroku-deployment-app-ex?branch=add-travis)
 # Heroku Deployment App
 
 ## Running Locally
@@ -19,6 +20,22 @@ $ kill -9 [PID]
 ```
 
 Where `PID` references each process that is running node or nodemon.
+
+## Testing
+
+To test, run:
+
+```
+$ npm test
+```
+
+This will run jest assertions against application code and generate code coverage reports. To view the HTML report,
+
+```
+$ open coverage/index.html
+```
+
+This will open reporter in default browser.
 
 ## TODOs/Plz Halp
 
