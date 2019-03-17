@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "start:local": "$(npm bin)/nodemon index.js &",
     "test": "$(npm bin)/jest --coverage && cat ./coverage/lcov.info | $(npm bin)/coveralls",
     "write-coveralls": "rm -rf .coveralls.yml && echo \"repo_token:$CODE_COVERAGE_TOKEN\" >> .coveralls.yml"

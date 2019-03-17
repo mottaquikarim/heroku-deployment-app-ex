@@ -9,3 +9,12 @@ test('when making GET request to /ping, we get back {"pong": true}', done => {
             done()
         })
 })
+
+test('when making GET request to /, we get back {"test": true}', done => {
+    request(app)
+        .get('/')
+        .then(response => {
+            expect(response.body).toEqual({"test": true})
+            done()
+        })
+})
