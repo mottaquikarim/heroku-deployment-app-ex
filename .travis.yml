@@ -3,6 +3,9 @@ node_js:
   - "11.10.1"
 install:
   - npm install
+before_script:
+  - export CODE_COVERAGE_TOKEN=$CODE_COVERAGE_TOKEN
 script:
+  - npm run write-coveralls
   - npm test
 
