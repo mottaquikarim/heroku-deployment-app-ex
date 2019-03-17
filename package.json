@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:local": "$(npm bin)/nodemon index.js &",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "$(npm bin)/jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -20,5 +20,23 @@
     "jest": "^24.5.0",
     "nodemon": "^1.18.10",
     "supertest": "^4.0.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "clover",
+      "html"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/__fixtures__/**",
+      "!**/coverage/**",
+      "!index.js"
+    ]
   }
 }
