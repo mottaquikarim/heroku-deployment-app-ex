@@ -34,7 +34,7 @@ This will run jest assertions against application code and generate code coverag
 $ open coverage/index.html
 ```
 
-This will open reporter in default browser
+This will open reporter in default browser.
 
 ## TODOs/Plz Halp
 
